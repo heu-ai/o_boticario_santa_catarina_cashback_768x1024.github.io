@@ -1,7 +1,7 @@
 // Imported Images in a Array by giving complete url
 var imges = ['img/1.png', 'img/2.png', 'img/3.png', 'img/4.png', 'img/5.png'];
 
-var landing_page = "https://campanha.boticario.com.br/cashbackdiadospais/BOAS_VINDAS?utm_source=Nbids&utm_medium=Paid&utm_campaign=OBoticario_Opus_202111_Cashback_Conversao_Nbids_Conversao_CPC_NA_Sao-Paulo-Capital_Geoloc&utm_content=OBoticario_Opus_202111_Cashback_Conversao_Nbids_Conversao_CPC_NA_Sao-Paulo-Capital_Geoloc_All_INT_Data_INT_18-49_SP_All_NA&utm_term=OBoticario_Opus_202111_Cashback_Conversao_Nbids_Conversao_CPC_NA_Sao-Paulo-Capital_Geoloc_All_INT_Data_INT_18-49_SP_All_NA_NA_NA_Display_Banner_768x1024_NA_NA"
+var landing_page = "https://campanha.boticario.com.br/cashbackdiadospais/BOAS_VINDAS?utm_source=Nbids&utm_medium=Paid&utm_campaign=OBoticario_Opus_202111_Cashback_Conversao_Nbids_Conversao_CPC_NA_Santa-Catarina_Geoloc&utm_content=OBoticario_Opus_202111_Cashback_Conversao_Nbids_Conversao_CPC_NA_Santa-Catarina_Geoloc_All_INT_Data_INT_18-49_SUL_All_NA&utm_term=OBoticario_Opus_202111_Cashback_Conversao_Nbids_Conversao_CPC_NA_Santa-Catarina_Geoloc_All_INT_Data_INT_18-49_SUL_All_NA_NA_NA_Display_Banner_768x1024_NA_NA"
 
 var location_link = "https://www.google.com/maps/search/o+boticario"
 
@@ -28,7 +28,7 @@ function openfile(filepath){
 function APICall(n){
   // console.log(n,"no")
   var x =JSON.stringify({ key:n})
-  fetch('https://demo.infuseads.com:8081/core/key-count/?id=32', {
+  fetch('https://demo.infuseads.com:8081/core/key-count/?id=41', {
     method: 'POST',
     body: x,
     headers: {
@@ -50,7 +50,7 @@ function APICall(n){
 
 window.onload = function(){
   var x =JSON.stringify({ key:"impression"})
-  fetch('https://demo.infuseads.com:8081/core/key-count/?id=32', {
+  fetch('https://demo.infuseads.com:8081/core/key-count/?id=41', {
     method: 'POST',
     body: x,
     headers: {
